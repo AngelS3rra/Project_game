@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://8h5lim8jf8qf"]
+
+[node name="zonamuerte" type="Area2D"]
+collision_mask = 2
