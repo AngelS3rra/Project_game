@@ -166,8 +166,20 @@ texture = ExtResource("1_0e48y")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_epypp")
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kdubu"]
-distance = -2.0
+[sub_resource type="Animation" id="Animation_0hol4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(334, -92)]
+}
 
 [sub_resource type="Animation" id="Animation_epypp"]
 resource_name = "movimiento"
@@ -186,26 +198,14 @@ tracks/0/keys = {
 "values": [Vector2(334, -92), Vector2(240, -92)]
 }
 
-[sub_resource type="Animation" id="Animation_0hol4"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(334, -92)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_q6r6c"]
 _data = {
 &"RESET": SubResource("Animation_0hol4"),
 &"movimiento": SubResource("Animation_epypp")
 }
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kdubu"]
+distance = -2.0
 
 [node name="Node2D" type="Node2D"]
 
@@ -222,13 +222,6 @@ position = Vector2(19, 29)
 zoom = Vector2(4, 4)
 limit_bottom = 98
 position_smoothing_enabled = true
-
-[node name="zonamuerte" parent="player" instance=ExtResource("3_q6r6c")]
-position = Vector2(-50, 143)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/zonamuerte"]
-position = Vector2(60, 5)
-shape = SubResource("WorldBoundaryShape2D_kdubu")
 
 [node name="plataforma" parent="." instance=ExtResource("3_epypp")]
 position = Vector2(265, -132)
@@ -253,3 +246,10 @@ position = Vector2(315, 62)
 
 [node name="moneda3" parent="." instance=ExtResource("4_0hol4")]
 position = Vector2(342, -65)
+
+[node name="zonamuerte" parent="." instance=ExtResource("3_q6r6c")]
+position = Vector2(-69, 114)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zonamuerte"]
+position = Vector2(149, 32)
+shape = SubResource("WorldBoundaryShape2D_kdubu")
