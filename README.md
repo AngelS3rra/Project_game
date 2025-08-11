@@ -9,3 +9,4 @@ The project used 2D Pixel Art Assets, which included various types of land and p
 Below is a demonstration of the assets used:
 
 ![Assets](https://github.com/AngelS3rra/Project_game/blob/main/project_gameADSP/brackeys_platformer_assets/sprites/world_tileset.png).
+![Assets](https://github.com/AngelS3rra/Project_game/blob/main/project_gameADSP/brackeys_platformer_assets/sprites/Meta.png).
