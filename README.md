@@ -14,3 +14,11 @@ Below is a demonstration of the assets used:
 Here is a demonstration of the gameplay of the game:
 
 ![Assets](https://github.com/AngelS3rra/Project_game/blob/main/captures/captura%20juego.png).
+
+You can find some short videos of the game running in the Captures folder. They are named:
+✅ 2025-08-10 18-33-02.mkv
+✅ prueba juego 2.mkv
+
+My experience making the game✨
+
+My experience was entertaining and at the same time frustrating at times, as there were times when it gave an error but everything was resolved. On one occasion I got an error for no reason and from one moment to the next the error was removed. Despite this, it is satisfying to see the game finished. On the other hand, saving things in Github helped me reinforce its use through the Terminal.
