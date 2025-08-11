@@ -11,6 +11,7 @@ position = Vector2(18, 16.5)
 scale = Vector2(1, 1.0625)
 texture = ExtResource("1_75i0q")
 script = ExtResource("2_s0fer")
+escena_cargar = "uid://b60dffiahp35q"
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_mask = 2

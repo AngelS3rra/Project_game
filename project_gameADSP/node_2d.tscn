@@ -435,4 +435,7 @@ position = Vector2(378, 11)
 position = Vector2(139, -104)
 
 [node name="meta" parent="." instance=ExtResource("9_4d7sh")]
-position = Vector2(-232, -86.5)
+position = Vector2(-259, -87)
+
+[node name="moneda" parent="." instance=ExtResource("4_0hol4")]
+position = Vector2(-149, -66)
