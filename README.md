@@ -13,4 +13,4 @@ Below is a demonstration of the assets used:
 
 Here is a demonstration of the gameplay of the game:
 
-![Assets]().
+![Assets](https://github.com/AngelS3rra/Project_game/blob/main/captures/captura%20juego.png).
