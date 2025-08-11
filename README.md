@@ -10,3 +10,7 @@ Below is a demonstration of the assets used:
 
 ![Assets](https://github.com/AngelS3rra/Project_game/blob/main/project_gameADSP/brackeys_platformer_assets/sprites/world_tileset.png).
 ![Assets](https://github.com/AngelS3rra/Project_game/blob/main/project_gameADSP/brackeys_platformer_assets/sprites/Meta.png).
+
+Here is a demonstration of the gameplay of the game:
+
+![Assets]().
