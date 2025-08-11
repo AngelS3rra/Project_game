@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bscrqcxi1lqq1"]
+
+[ext_resource type="Texture2D" uid="uid://dxgnjwc0i657d" path="res://brackeys_platformer_assets/sprites/world_tileset.png" id="1_ri5r6"]
+[ext_resource type="Script" uid="uid://cqhsrfjaogmv" path="res://cartel_pc.gd" id="2_6dt03"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6dt03"]
+size = Vector2(15, 15)
+
+[node name="CartelPC" type="Sprite2D"]
+position = Vector2(26, 25)
+texture = ExtResource("1_ri5r6")
+region_enabled = true
+region_rect = Rect2(128, 49, 17, 16)
+script = ExtResource("2_6dt03")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_6dt03")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
